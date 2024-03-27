@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frontend mentor Ping challenge">
+  <meta name="author" content="Wojciech Podleśny">
+  <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/08fd525935.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="ping logo">
+  </header>
+  <main>
+    <section>
+      <div class="hero-texts">
+        <h1>We are launching <span>soon!</span></h1>
+        <p>Subscribe and get notified</p>
+      </div>
+      <form action="#">
+        <div class="inputContainer">
+          <input type="email" placeholder="Your email address..." id="input">
+          <small id="error-text"></small>
+        </div>
+        <button type="submit">Notify Me</button>
+      </form>
+      <div id="thankYouModal" class="modal">
+        <div class="modal-content">
+          <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+            <path d="M448,256c0-106-86-192-192-192S64,150,64,256s86,192,192,192S448,362,448,256Z"
+              style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px" />
+            <polyline points="352 176 217.6 336 160 272"
+              style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+          </svg>
+          <span class="close">&times;</span>
+          <p>Thank you for submitting the form!</p>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="./images/illustration-dashboard.png" alt="dashboard">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="social-icons">
+      <p><i class="fab fa-facebook-f"></i></p>
+      <p><i class="fab fa-twitter"></i></p>
+      <p><i class="fab fa-instagram"></i></p>
+    </div>
+    <small>&copy; Copyright Ping. All rights reserved.</small>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Wojciech Podleśny</a>.
+    </p>
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
